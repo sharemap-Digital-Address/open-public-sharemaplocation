@@ -39,7 +39,7 @@ body {
 /* Logo Wrapper & Responsive Image Controls */
 .logo-wrapper {
   width: 100%;
-  max-width: 120px; /* Kontrolado ang laki ng logo frame sa kahit anong display */
+  max-width: 180px; /* Kontrolado ang laki ng logo frame sa kahit anong display */
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
