@@ -25,6 +25,15 @@ body {
   gap: 20px; /* Espasyo sa pagitan ng dalawang Card */
 }
 
+/* Styling para sa Logo sa Header */
+.app-logo {
+  width: 72px;            /* Laki ng logo */
+  height: 72px;           /* Taas ng logo */
+  object-fit: contain;    /* Siguradong hindi mamamalat / mauunat ang logo */
+  margin-bottom: 12px;    /* Espasyo sa pagitan ng logo at ng Welcome text */
+  border-radius: 12px;    /* Opsyonal: Lalagyan ng bahagyang kurba kung square ang logo */
+}
+
 /* ========================================== */
 /* HEADER STYLING (DAGDAG DITO)                */
 /* ========================================== */
