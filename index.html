@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO at Link Preview para sa Messenger/Social Media -->
+  <meta name="description" content="ShareMap Public Location Share - Easily share your real-time GPS location and digital address via Web Share Menu or direct SMS to any contact.">
+  <meta property="og:title" content="ShareMap - Open Public Location Share">
+  <meta property="og:description" content="Pangkalahatang pag-share ng lokasyon. Isend via Messenger, Viber, o SMS Text.">
+
+  <title>ShareMap - Open Public Location Share</title>
+  
+  <!-- Link sa iyong CSS style sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="share-container">
+
+    <!-- Card 1: Native Share -->
+    <div class="share-card">
+      <div class="card-content">
+        <button onclick="shareViaNative()" class="btn btn-primary">
+          🌐 Native Share Location
+        </button>
+        <p class="description">
+          Share your details and location via other chat apps (Messenger, Viber, Gmail, Telegram, etc.)
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2: SMS Share -->
+    <div class="share-card">
+      <div class="card-content">
+        <button onclick="shareViaSMS()" class="btn btn-secondary">
+          📱 Share Location via SMS
+        </button>
+        <p class="description">
+          Send your location details via standard text message (Select recipient from your Phone Contacts)
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Link sa JavaScript code kung hiwalay -->
+  <script src="script.js"></script>
+</body>
+</html>
