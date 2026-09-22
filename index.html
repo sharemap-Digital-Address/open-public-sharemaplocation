@@ -10,32 +10,32 @@
   <meta property="og:description" content="Pangkalahatang pag-share ng lokasyon. Isend via Messenger, Viber, o SMS Text.">
 
   <title>ShareMap - Open Public Location Share</title>
-  
-  <!-- Link sa iyong CSS style sheet -->
+
+  <!-- Link sa CSS style sheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="share-container">
 
-    <!-- Card 1: Native Share -->
+    <!-- Card 1: Native Share Menu -->
     <div class="share-card">
       <div class="card-content">
-        <button onclick="shareViaNative()" class="btn btn-primary">
+        <a href="https://sharemap-digital-address.github.io/open-sharemaplocation-sharemenu/gateway.html" class="btn btn-primary">
           🌐 Native Share Location
-        </button>
+        </a>
         <p class="description">
           Share your details and location via other chat apps (Messenger, Viber, Gmail, Telegram, etc.)
         </p>
       </div>
     </div>
 
-    <!-- Card 2: SMS Share -->
+    <!-- Card 2: Non-Direct SMS -->
     <div class="share-card">
       <div class="card-content">
-        <button onclick="shareViaSMS()" class="btn btn-secondary">
+        <a href="https://sharemap-digital-address.github.io/sharemap-via-sendSms/" class="btn btn-secondary">
           📱 Share Location via SMS
-        </button>
+        </a>
         <p class="description">
           Send your location details via standard text message (Select recipient from your Phone Contacts)
         </p>
@@ -44,7 +44,5 @@
 
   </div>
 
-  <!-- Link sa JavaScript code kung hiwalay -->
-  <script src="script.js"></script>
 </body>
 </html>
