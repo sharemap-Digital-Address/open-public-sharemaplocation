@@ -14,32 +14,44 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px 16px;
+  overflow-x: hidden; /* Pinipigilan ang horizontal scroll leak */
 }
 
 /* Main Layout Container */
 .share-container {
   width: 100%;
-  max-width: 440px;
+  max-width: 440px; /* Maximum container width sa desktop */
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Espasyo sa pagitan ng dalawang Card */
+  gap: 20px;
 }
 
-/* Styling para sa Logo sa Header */
-.app-logo {
-  width: 72px;            /* Laki ng logo */
-  height: 72px;           /* Taas ng logo */
-  object-fit: contain;    /* Siguradong hindi mamamalat / mauunat ang logo */
-  margin-bottom: 12px;    /* Espasyo sa pagitan ng logo at ng Welcome text */
-  border-radius: 12px;    /* Opsyonal: Lalagyan ng bahagyang kurba kung square ang logo */
-}
-
-/* ========================================== */
-/* HEADER STYLING (DAGDAG DITO)                */
-/* ========================================== */
+/* Header Section */
 .share-header {
   text-align: center;
-  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo Wrapper & Responsive Image Controls */
+.logo-wrapper {
+  width: 100%;
+  max-width: 120px; /* Kontrolado ang laki ng logo frame sa kahit anong display */
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-logo {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  display: block;
 }
 
 .share-header h2 {
@@ -54,7 +66,6 @@ body {
   color: #64748b;
   font-weight: 500;
 }
-/* ========================================== */
 
 /* Individual Share Card Structure */
 .share-card {
@@ -82,7 +93,7 @@ body {
   padding: 16px 20px;
   font-size: 16px;
   font-weight: 600;
-  text-decoration: none; /* Tinatagal ang underline sa <a> tag */
+  text-decoration: none;
   text-align: center;
   border-radius: 10px;
   display: flex;
@@ -93,12 +104,10 @@ body {
   cursor: pointer;
 }
 
-/* Interactive Touch/Click Feedback sa Mobile */
 .btn:active {
   transform: scale(0.98);
 }
 
-/* Primary Button Style (Messenger Blue) */
 .btn-primary {
   background-color: #0084ff;
   color: #ffffff;
@@ -108,7 +117,6 @@ body {
   background-color: #006ece;
 }
 
-/* Secondary Button Style (SMS Green) */
 .btn-secondary {
   background-color: #10b981;
   color: #ffffff;
@@ -118,7 +126,6 @@ body {
   background-color: #059669;
 }
 
-/* Description Text sa Ilalim ng Button */
 .description {
   margin-top: 12px;
   font-size: 13.5px;
