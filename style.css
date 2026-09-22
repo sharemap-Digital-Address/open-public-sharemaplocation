@@ -25,6 +25,28 @@ body {
   gap: 20px; /* Espasyo sa pagitan ng dalawang Card */
 }
 
+/* ========================================== */
+/* HEADER STYLING (DAGDAG DITO)                */
+/* ========================================== */
+.share-header {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.share-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.share-header p {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+/* ========================================== */
+
 /* Individual Share Card Structure */
 .share-card {
   background-color: #ffffff;
